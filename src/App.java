@@ -1,4 +1,4 @@
-import java.util.Locale;
+
 import java.util.Scanner;
 
 public class App {
@@ -13,7 +13,7 @@ public class App {
 		c1.depositar(depositoValor);
 		
 		System.out.println("Deseja consultar seu saldo? digite sim para continuar ou não para encerrar ");
-		Scanner confirmacaoDeposito = sc.useLocale(Locale.US);
+		String confirmacaoDeposito = sc.next();
 		
 		if(confirmacaoDeposito.equals("sim") || confirmacaoDeposito.equals("Sim")) {
 			c1.consultarSaldo();
