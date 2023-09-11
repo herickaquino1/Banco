@@ -1,11 +1,14 @@
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		/*O metodo useLocale foi implemnetado ao scanner devido ao sistema não reconhecer
+		o ponto como separador flutuante*/
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 		Conta c1 = new Conta();
 		
 		System.out.println("Por favor insira o valor do deposito: ");
